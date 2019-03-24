@@ -1,0 +1,54 @@
+$white = #fff
+$black = #000
+$primary = #0088cc
+$secondary = #e36159
+$tertiary = #2baab1
+$quaternary = #383f48
+$text = #bddef3
+$text_dark = #737271
+
+html
+    height: 100%
+body
+    margin: 0
+    padding: 0
+    min-height: 100%
+    font-size: 15px!important
+    color: $white
+
+h1, h2, h3, h4, h5
+    color: $primary
+
+.btn-bs
+    display: inline-block
+    font-weight: 400
+    color: $black
+    text-align: center
+    vertical-align: middle
+    user-select: none
+    background-color: transparent
+    border: 1px solid transparent
+    padding: .375rem .75rem
+    font-size: 1rem
+    line-height: 1.5
+    border-radius: .25rem
+    transition: all .15s ease-in-out
+    &:focus
+        outline: none
+    &:hover
+        filter: brightness(1.1)
+    &.btn-bs-lg
+        padding: .5rem 1rem
+        font-size: 1.25rem
+        line-height: 1.5
+        border-radius: .3rem
+    &.btn-bs-sm
+        padding: .25rem .5rem
+        font-size: .875rem
+        line-height: 1.5
+        border-radius: .2rem
+
+.btn-bs-primary
+    color: $white
+    background-color: $primary
+    border-color: $primary
