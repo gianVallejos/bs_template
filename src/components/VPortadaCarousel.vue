@@ -80,64 +80,65 @@
 </script>
 
 <style lang="stylus">
-.slick-prev, .slick-next
-    position: absolute
-    top: 50%
-    z-index: 991
-    color: transparent
-    font-size: 0
-    background: rgba(0, 0, 0, .4)
-    border-radius: 10px
-    border-radius: 5px
-    width: 40px
-    height: 40px
-    border: none
-    &:focus
-        outline: none
+#portada
+    .slick-prev, .slick-next
+        position: absolute
+        top: 50%
+        z-index: 991
+        color: transparent
+        font-size: 0
+        background: rgba(0, 0, 0, .4)
+        border-radius: 10px
+        border-radius: 5px
+        width: 40px
+        height: 40px
+        border: none
+        &:focus
+            outline: none
 
-.slick-prev
-    left: 25px
-    &::before
-        font-family: "Font Awesome 5 Free"
-        font-weight: 900
-        content: "\f053"
-        color: $white
-        font-size: .9rem
+    .slick-prev
+        left: 25px
+        &::before
+            font-family: "Font Awesome 5 Free"
+            font-weight: 900
+            content: "\f053"
+            color: $white
+            font-size: .9rem
 
-.slick-next
-    right: 25px
-    &::before
-        font-family: "Font Awesome 5 Free"
-        font-weight: 900
-        content: "\f054"
-        color: $white
-        font-size: .9rem
+    .slick-next
+        right: 25px
+        &::before
+            font-family: "Font Awesome 5 Free"
+            font-weight: 900
+            content: "\f054"
+            color: $white
+            font-size: .9rem
 
-ul
-    &.slick-dots
-        position absolute
-        bottom: 25px
-        width: 100%
-        display: flex
-        justify-content center
-        list-style none
-        z-index 991
-        li
-            button
-                width: 12px
-                height: 12px
-                border-radius: 50%
-                border: none
-                margin: 0px 5px
-                font-size: 0
-                color: transparent
-                background: rgba(0, 0, 0, .6)
-                transition all .6s ease-out
-                &:focus
-                    outline: none
-            &.slick-active
+    ul
+        &.slick-dots
+            position absolute
+            bottom: 25px
+            width: 100%
+            display: flex
+            justify-content center
+            list-style none
+            z-index 991
+            li
                 button
-                    transform: scale(1.4)
-                    background: rgb(0, 0, 0)     
+                    width: 12px
+                    height: 12px
+                    border-radius: 50%
+                    border: none
+                    margin: 0px 5px
+                    font-size: 0
+                    color: transparent
+                    background: rgba(0, 0, 0, .6)
+                    transition all .6s ease-out
+                    &:focus
+                        outline: none
+                &.slick-active
+                    button
+                        transform: scale(1.4)
+                        background: rgb(0, 0, 0)     
 
 </style>

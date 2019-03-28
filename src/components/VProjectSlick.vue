@@ -78,3 +78,33 @@
         }
     }
 </script>
+
+<style lang="stylus">
+.projects-slick-container
+    ul
+        &.slick-dots
+            position block
+            padding: 25px 0px
+            width: 100%
+            display: flex
+            justify-content center
+            list-style none
+            z-index 991
+            li
+                button
+                    width: 12px
+                    height: 12px
+                    border-radius: 50%
+                    border: none
+                    margin: 0px 5px
+                    font-size: 0
+                    color: transparent
+                    background: rgba(0, 0, 0, .6)
+                    transition all .6s ease-out
+                    &:focus
+                        outline: none
+                &.slick-active
+                    button
+                        transform: scale(1.4)
+                        background: $primary
+</style>

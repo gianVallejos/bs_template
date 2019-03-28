@@ -11,7 +11,7 @@
                 slickOptions: {
                     autoplay: true,
                     arrows: true,
-                    dots: true,
+                    dots: false,
                     adaptiveHeight: true,
                     slidesToShow: 1,
                     speed: 300,
