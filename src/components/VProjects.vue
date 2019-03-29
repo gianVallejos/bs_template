@@ -1,11 +1,9 @@
 <template lang="pug">
     section#projects
-        b-container            
-            .projects-title
-                h2 Projects
-                p.descripcion Le Lorem Ipsum est simplement du faux
+        b-container
+            VTitleSection( 'nombre' = 'Projects' 'descripcion' = 'Le Lorem Ipsum est simplement du faux' 'is_white' = false)
             .projects-description
-                | On sait depuis longtemps que travailler avec du texte lisible et contenant du sens est source de distractions, et empêche de se concentrer sur la mise en page elle-même. 
+                p On sait depuis longtemps que travailler avec du texte lisible et contenant du sens est source de distractions, et empêche de se concentrer sur la mise en page elle-même. 
             .projects-slick-container
                 VProjectSlick( ':slickOptions' = 'slickOptions' )
                     .projects-slick-item( slot = "content" v-cloak )
@@ -49,6 +47,7 @@
 
 <script>
     import VProjectSlick from './VProjectSlick.vue'
+    import VTitleSection from './Widgets/VTitleSection.vue'
     export default {
         data () {
             return {
@@ -67,7 +66,8 @@
             }
         },
         components: {
-            VProjectSlick
+            VProjectSlick,
+            VTitleSection
         }
     }
 </script>
@@ -91,10 +91,18 @@
 
     .projects-description
         color: $text_dark
+        padding-bottom: 40px
+        display: flex
+        justify-content center
+        p
+            max-width: 780px
+            text-align: center
+        
 
     .projects-slick-item
         img
             max-height: 264px
+            border-radius: 3%
         a
             display: inherit
             &:focus

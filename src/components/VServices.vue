@@ -1,9 +1,7 @@
 <template lang="pug">
     section#services
         b-container            
-            .services-title
-                h2 Services
-                p.descripcion Le Lorem Ipsum est simplement du faux
+            VTitleSection( 'nombre' = 'Services' 'descripcion' = 'LE LOREM IPSUM EST SIMPLEMENT DU FAUX' 'is_white' = true)
             .services-content
                 .services-item( v-for='(item, key) in data' ':key' = 'key' )
                     .icon
@@ -14,10 +12,14 @@
 </template>
 
 <script>
+    import VTitleSection from './Widgets/VTitleSection.vue'
     export default {
         props: [
             'data'
-        ]
+        ],
+        components: {
+            VTitleSection
+        }
     }
 </script>
 

@@ -80,7 +80,8 @@
 </script>
 
 <style lang="stylus">
-.projects-slick-container
+.clients-slick,
+.testimonial-slick
     ul
         &.slick-dots
             position block

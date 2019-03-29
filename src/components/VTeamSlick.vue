@@ -80,7 +80,7 @@
 </script>
 
 <style lang="stylus">
-.projects-slick-container
+.team-slick
     ul
         &.slick-dots
             position block
