@@ -7,6 +7,8 @@
     DataClients
     DataTeam
     DataContact
+    DataAddress
+    DataFooter
 </template>
 
 <script>
@@ -18,6 +20,8 @@
   import DataClients from './DataClients.vue'
   import DataTeam from './DataTeam.vue'
   import DataContact from './DataContact.vue'
+  import DataAddress from './DataAddress.vue'
+  import DataFooter from './DataFooter.vue'
 
   export default {
     name: 'app',
@@ -33,7 +37,9 @@
       DataProjects,
       DataClients,
       DataTeam,
-      DataContact
+      DataContact,
+      DataAddress,
+      DataFooter
     }
   }
 </script>
